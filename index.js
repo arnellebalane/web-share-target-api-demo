@@ -1,6 +1,12 @@
 const form = document.querySelector('form');
 const messages = document.querySelector('ul');
 
+if (location.search) {
+    const params = new URLSearchParams(location.search);
+    const title = params.get('title');
+    form.message.value = title;
+}
+
 form.addEventListener('submit', e => {
     e.preventDefault();
 
