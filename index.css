@@ -1,5 +1,5 @@
 body {
-    padding: 48px;
+    padding: 48px 0;
     font-family: "Open Sans", sans-serif;
     font-size: 16px;
     color: #333;
@@ -55,7 +55,6 @@ li {
     margin: 0.25em 0;
     position: relative;
     word-wrap: break-word;
-    pointer-events: none;
 }
 
 li:nth-child(2n+1) {
@@ -73,5 +72,4 @@ li::after {
     background: rgba(0, 0, 0, 0.15) url("share.png") center center no-repeat;
     background-size: 14px;
     opacity: 0.25;
-    pointer-events: auto;
 }
