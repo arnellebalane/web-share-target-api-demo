@@ -55,6 +55,7 @@ li {
     margin: 0.25em 0;
     position: relative;
     word-wrap: break-word;
+    pointer-events: none;
 }
 
 li:nth-child(2n+1) {
@@ -63,12 +64,14 @@ li:nth-child(2n+1) {
 
 li::after {
     content: "";
-    width: 16px;
-    height: 16px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
     position: absolute;
-    top: calc(50% - 8px);
+    top: calc(50% - 10px);
     right: 8px;
-    background: url("share.png") center center no-repeat;
-    background-size: cover;
+    background: rgba(0, 0, 0, 0.15) url("share.png") center center no-repeat;
+    background-size: 14px;
     opacity: 0.25;
+    pointer-events: auto;
 }

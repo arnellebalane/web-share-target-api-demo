@@ -10,7 +10,8 @@ async function onInstall() {
         '/',
         '/index.css',
         '/index.js',
-        '/manifest.webmanifest'
+        '/manifest.webmanifest',
+        '/share.png'
     ]);
     await skipWaiting();
 }

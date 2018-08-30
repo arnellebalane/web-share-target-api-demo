@@ -12,6 +12,13 @@ form.addEventListener('submit', e => {
     }
 });
 
+messages.addEventListener('click', async e => {
+    if (e.target.matches('li')) {
+        const message = e.target.textContent;
+        await navigator.share({text: message});
+    }
+});
+
 function postMessage(message) {
     const li = document.createElement('li');
     li.textContent = message;
