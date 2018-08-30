@@ -1,0 +1,15 @@
+{
+    "name": "Dummy Share",
+    "short_name": "Dummy Share",
+    "description": "Dummy application for Web Share Target API",
+    "icons": [{
+        "src": "icon.png",
+        "type": "image/png",
+        "sizes": "200x200"
+    }],
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "portrait",
+    "theme_color": "#ffeb3b",
+    "background_color": "#ffffff"
+}
