@@ -4,7 +4,9 @@ const messages = document.querySelector('ul');
 if (location.search) {
     const params = new URLSearchParams(location.search);
     const title = params.get('title');
-    form.message.value = title;
+    const text = params.get('text');
+    const url = params.get('url');
+    form.message.value = [title, text, url].join('\n\n');
 }
 
 form.addEventListener('submit', e => {
